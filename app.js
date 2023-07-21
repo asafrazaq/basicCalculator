@@ -2,7 +2,7 @@
 const buttonsDisplay = document.querySelector('.buttons-display');
 const outputBox = document.querySelector('.output');
 let clickedNumbers = [];
-let rememberMe = [];
+
 
 //Event Listeners
 buttonsDisplay.addEventListener("click", buttonClicked);
@@ -87,9 +87,11 @@ function buttonClicked(event) {
                 workOutPercent();
                 console.log('percentage call');
                 break;
+
             case 'MRC':
             case 'M+':
-            case 'M-':    
+            case 'M-':  
+            case '√':  
                 clickedNumbers.pop();
                 updateOutput();
                 break;
